@@ -6,4 +6,4 @@ int main()
      i= 10.5;
     printf("%f!",i);
     return 0;
-    }=
+    }
