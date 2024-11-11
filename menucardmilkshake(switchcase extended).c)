@@ -1,0 +1,116 @@
+#include <stdio.h>
+
+int main()
+{
+    int menu, bill, quantity;
+    int price;
+
+    // Display menu
+    printf("Welcome to jk's milkshake bar");
+    printf("\nPress 1. apple milkshake: ₹40");
+    printf("\nPress 2. strawberry milkshake: ₹35");
+    printf("\nPress 3. banana milkshake : ₹20");
+    printf("\nPress 4. Mango milkshake: ₹40");
+    printf("\nPress 5. papaya milkshake: ₹40");
+    printf("\nPress 6. Pineapple milkshake: ₹30");
+    printf("\nPress 7. Sweet lime milkshake: ₹35");
+    printf("\nPress 8. Orange milkshake: ₹30");
+    printf("\nPress 9. Watermelon milkshake: ₹45");
+    printf("\nPress 10. Apple-Banana smoothie: ₹60");
+
+    // for menu selection
+    printf("\n\nYour choice: ");
+    scanf("%d", &menu);
+
+    // Set prices based on user choice
+    switch(menu)
+    {
+        case 1:
+            printf("\"apple milkshake");
+            price = 40;
+            break; 
+        case 2:
+            printf("\nstrawberry milkshake");
+            price = 35;
+            break;
+        case 3:
+            printf("\nbanana milkshake");
+            price = 20;
+            break;
+        case 4:
+            printf("\nMango milkshake");
+            price = 40;
+            break;
+        case 5:
+            printf("\npapaya milkshake");
+            price = 40;
+            break;
+        case 6:
+            printf("\nPineapple milkshake");
+            price = 30;
+            break;
+        case 7:
+            printf("\nSweet lime milkshake");
+            price = 35;
+            break;
+        case 8:
+            printf("\nOrange milkshake");
+            price = 30;
+            break;
+        case 9:
+            printf("\nWatermelon milkshake");
+            price = 45;
+            break;
+        case 10:
+            printf("\nApple-Banana smoothie");
+            price = 60;
+            break;
+        default:
+            printf("\n\nPlease enter a valid choice...");
+            return 1; // Exit if invalid input
+    }
+
+    // Get the quantity
+    printf("\nPlease enter the required quantity: ");
+    scanf("%d", &quantity);
+
+    // Calculate the total bill
+    bill = price * quantity;
+
+    // Print the total bill
+    printf("Total Bill: ₹%d\n", bill);
+
+    printf("\nPlease collect your order from the counter");
+    printf("\nthank you plz visit again also share feedback on our official website ");
+    printf("\n\nRegards jk's milkshake bar");
+}
+
+
+output
+
+Welcome to jk's milkshake bar
+Press 1. apple milkshake: ₹40
+Press 2. strawberry milkshake: ₹35
+Press 3. banana milkshake : ₹20
+Press 4. Mango milkshake: ₹40
+Press 5. papaya milkshake: ₹40
+Press 6. Pineapple milkshake: ₹30
+Press 7. Sweet lime milkshake: ₹35
+Press 8. Orange milkshake: ₹30
+Press 9. Watermelon milkshake: ₹45
+Press 10. Apple-Banana smoothie: ₹60
+
+Your choice: 5
+
+papaya milkshake
+Please enter the required quantity: 5
+Total Bill: ₹200
+
+Please collect your order from the counter
+thank you plz visit again also share feedback on our official website
+
+Regards jk's milkshake bar
+[Process completed - press Enter]
+
+
+    
